@@ -63,13 +63,10 @@
                     </div>
                 </div>
                 {{ csrf_field() }}
-                <button type="submit" class="btn btn-success">Buy now</button>
+                <a href="{{ route('shop.thank')}}" type="submit" class="btn btn-success">Buy now</a>
             </form>
         </div>
     </div>
 @endsection
 
-@section('scripts')
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-    <script type="text/javascript" src="{{ URL::to('src/js/checkout.js') }}"></script>
-@endsection
+
